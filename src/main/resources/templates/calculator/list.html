@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="manager" xmlns:layout="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <meta name="description" content=""/>
+    <meta name="author" content=""/>
+    <!--<link rel="icon" href="../../favicon.ico"/>-->
+
+    <title>Spring Boot Web Application</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" integrity="sha512-dTfge/zgoMYpP7QbHy4gWMEGsbsdZeCXz7irItjcC3sPUFtf0kuFbDz/ixG7ArTxmDjLXDmezHubeNikyKGVyQ==" crossorigin="anonymous"/>
+    <link href="/css/sticky-footer-navbar.css" rel="stylesheet"/>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js" integrity="sha512-K1qjQ+NcF2TYO/eI3M6v8EiNYZfA95pQumfvcVrTHtwQVDG+aHRqLi/ETn2uB+1JqwYqVG3LIvdm9lj6imS/pQ==" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+<!-- Fixed navbar -->
+<!--<nav class="navbar navbar-default navbar-fixed-top">-->
+<nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="#">Мое второе приложение</a>
+        </div>
+    </div>
+</nav>
+
+<div class="container">
+    <h2>_</h2>
+    <h2>Калькулятор</h2>
+    <form method="post" action="/calculator/update">
+        {{#numbers}}
+        <textarea rows="1" name="message">{{answer}}</textarea>
+        {{/numbers}}
+    </form>
+    <table>
+        <tr>
+            <td>
+    <form method="post" action="/calculator/update">
+        <p><input type="hidden" name="id" value="1"></p>
+        <p><input type="submit" class="btn btn-info" value="1"></p>
+    </form>
+            </td>
+            <td>
+    <form method="post" action="/calculator/update">
+        <p><input type="hidden" name="id" value="2"></p>
+        <p><input type="submit" class="btn btn-info" value="2"></p>
+    </form>
+            </td>
+            <td>
+    <form method="post" action="/calculator/update">
+        <p><input type="hidden" name="id" value="3"></p>
+        <p><input type="submit" class="btn btn-info" value="3"></p>
+    </form>
+            </td>
+            <td>
+                <form method="post" action="/calculator/update">
+                    <p><input type="hidden" name="id" value="10"></p>
+                    <p><input type="submit" class="btn btn-info" value="+"></p>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+    <form method="post" action="/calculator/update">
+        <p><input type="hidden" name="id" value="4"></p>
+        <p><input type="submit" class="btn btn-info" value="4"></p>
+    </form>
+            </td>
+            <td>
+    <form method="post" action="/calculator/update">
+        <p><input type="hidden" name="id" value="5"></p>
+        <p><input type="submit" class="btn btn-info" value="5"></p>
+    </form>
+            </td>
+            <td>
+    <form method="post" action="/calculator/update">
+        <p><input type="hidden" name="id" value="6"></p>
+        <p><input type="submit" class="btn btn-info" value="6"></p>
+    </form>
+            </td>
+            <td>
+                <form method="post" action="/calculator/update">
+                    <p><input type="hidden" name="id" value="13"></p>
+                    <p><input type="submit" class="btn btn-info" value="*"></p>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+    <form method="post" action="/calculator/update">
+        <p><input type="hidden" name="id" value="7"></p>
+        <p><input type="submit" class="btn btn-info" value="7"></p>
+    </form>
+            </td>
+            <td>
+    <form method="post" action="/calculator/update">
+        <p><input type="hidden" name="id" value="8"></p>
+        <p><input type="submit" class="btn btn-info" value="8"></p>
+    </form>
+            </td>
+            <td>
+    <form method="post" action="/calculator/update">
+        <p><input type="hidden" name="id" value="9"></p>
+        <p><input type="submit" class="btn btn-info" value="9"></p>
+    </form>
+            </td>
+            <td>
+                <form method="post" action="/calculator/update">
+                    <p><input type="hidden" name="id" value="14"></p>
+                    <p><input type="submit" class="btn btn-info" value="-"></p>
+                </form>
+            </td>
+        </tr>
+        <tr>
+            <td>
+        <form method="post" action="/calculator/update">
+            <p><input type="hidden" name="id" value="12"></p>
+            <p><input type="submit" class="btn btn-info" value="C"></p>
+        </form>
+            </td>
+            <td>
+
+                <form method="post" action="/calculator/update">
+        <p><input type="hidden" name="id" value="0"></p>
+        <p><input type="submit" class="btn btn-info" value="0"></p>
+    </form>
+            </td>
+            <td>
+
+    <form method="post" action="/calculator/update">
+        <p><input type="hidden" name="id" value="11"></p>
+        <p><input type="submit" class="btn btn-info" value="="></p>
+    </form>
+            </td>
+            <td>
+                <form method="post" action="/calculator/update">
+                    <p><input type="hidden" name="id" value="15"></p>
+                    <p><input type="submit" class="btn btn-info" value="/"></p>
+                </form>
+            </td>
+        </tr>
+
+    </table>
+
+
+
+
+</div>
+<!-- /.container -->
+
+<footer class="footer">
+    <div class="container">
+        <p class="text-muted">by Ilya Arkhipov</p>
+    </div>
+</footer>
+
+</body>
+
+</html>
+
